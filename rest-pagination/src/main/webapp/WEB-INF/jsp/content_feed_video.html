@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fomoland | Feed</title>
+<!-- meta tags for resposive -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<!-- css links -->
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animated_delays.css">
+	<!-- js links -->
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body>
+<!-- navbar -->
+	<nav class="indigo">
+		<div class="row container">
+			<div class="col s6 m3">
+				<!-- toggle switches tab -->
+				<div class="row">
+					<div class="col s6 center indigo darken-2 btn_toggle z-depth-1 waves-effect waves-light">
+						<a href="#">READ</a>
+					</div>
+					<div class="col s6 center waves-effect waves-light">
+						<a href="#">SHOP</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s6 m6">
+				<!-- points display -->
+				<span class="right yellow-text" style="padding: 0 5px;">XXXX <span class="white-text">POINTS</span></span>
+			</div>
+		</div>
+	</nav>
+	<div class="after_nav">
+		<!-- read and shop tabs -->
+		<div id="read_div">
+			<!-- image here -->
+			<div class="feed-img center valign-wrapper">
+				<video controls autoplay>
+					<source src="img/video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<!-- article here -->
+			<div class="container">
+			<!-- article contains only 150 characters -->
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p
+					<br>
+					<!-- Read full story link for pop up -->
+					<a href="#story" class="modal-trigger">Read full story >></a>
+				</p>
+				<!-- modal with full story of article -->
+				<div class="modal modal-fixed-footer" id="story">
+					<!-- article written over here, the full story article or full article -->
+					<div class="modal-content flow-text">
+						<h6 class="indigo white-text">Article heading</h6>
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic lif
+					</div>
+					<!-- close button for modal -->
+					<div class="modal-footer">
+						<button class="modal-action modal-close waves-effect waves-red btn-flat ">Close</button>
+					</div>
+				</div>
+
+				<!-- social share options checklist -->
+				<div class="row">
+
+					<div class="col s6 m6">Choose friends :</div>
+					<div class="col s6 m6">
+						<a href="#edit_text" class="modal-trigger right">Edit text</a>
+						<!-- edit text modal option-->
+						<div id="edit_text" class="modal">
+							<div class="modal-content">
+								<!-- textarea to edit text -->
+								<div class="input-field">
+									<textarea id="edit_text_field" class="materialize-textarea"></textarea>
+									<label for="edit_text_field">Edit share text</label>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button class="btn-flat modal-action modal-close waves-effect waves-green" onclick="Materialize.toast('Text edited', 4000)">Done</button>
+							</div>
+						</div>
+					</div>
+					<div class="col s4 m6">
+						<p>
+					      <input type="checkbox" id="share_fb" checked />
+					      <label for="share_fb">Facebook</label>
+					    </p>
+					</div>
+					<div class="col s4 m6">
+						<p>
+					      <input type="checkbox" id="share_whatsapp" />
+					      <label for="share_whatsapp">Whatsapp</label>
+					    </p>
+					</div>
+					<div class="col s4 m6">
+						<p>
+					      <input type="checkbox" id="share_twitter" />
+					      <label for="share_twitter">Twitter</label>
+					    </p>
+					</div>
+					<div class="col s4 m6">
+						<p>
+					      <input type="checkbox" id="share_pinerest" />
+					      <label for="share_pinerest">Pinerest</label>
+					    </p>
+					</div>
+					<div class="col s4 m6">
+						<p>
+					      <input type="checkbox" id="share_instagram" />
+					      <label for="share_instagram">Instagram</label>
+					    </p>
+					</div>
+					<div class="col s4 m6">
+						<p>
+					      <input type="checkbox" id="share_linkedin" />
+					      <label for="share_linkedin">LinkedIn</label>
+					    </p>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- share button -->
+	<!-- FAB next button-->
+	<div class="fab-cust center">
+		<button class="btn btn-large-round btn-large red white-text waves-effect waves-light" onclick="Materialize.toast('Congratulations! You got xxxx points', 4000)">SHARE AND EARN xxxx POINTS</button>
+	</div>
+</body>
+</html>

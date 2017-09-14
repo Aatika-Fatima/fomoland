@@ -1,0 +1,19 @@
+/* function shareOnMedia(){
+	 $('#share_on_media_btn').click(function() {
+	        var names = [];
+	        $('#share_on_media input:checked').each(function() {
+	            names.push(this.name);
+	        });
+	     
+		for(String providerName: names){
+			$.ajax({
+				url:'/share/'+providerName, 
+				type:'GET', 
+				success:function(result){
+					alert('saved'); 
+					alert('u earned ' + result.points ); 
+				}
+			});
+		}
+	    });
+ */
